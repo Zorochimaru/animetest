@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
+  <meta property="og:url"           content="http://anime.stohitrostey.ru/test/animetest.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Animetest" />
+  <meta property="og:description"   content="А сколько наберёшь ты?" />
+  <meta property="og:image"         content="/test/images/fbl.png" />  
+    <title>Anime Test</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="st"><center><button onclick="check(5);" class="myButton" style="margin-top: 20%;height: 100px; width: 200px; font-size: 24px">Начать</button></center></div>
+
+<div id="area" class="wrapper">			<!--Поле теста--> 
+
+        <center>
+            <img id="imagearea">
+			<p class="questions" id="textarea"></p>
+            <div id="but">
+            <div id="b1">
+            <button onclick="check(1);" class="myButton" id="ans1"></button>
+            <button onclick="check(2);" class="myButton" id="ans2"></button></div>  
+            <div id="b2">
+            <button onclick="check(3);" class="myButton" id="ans3"></button>
+            <button onclick="check(4);" class="myButton" id="ans4"></button></div>
+            </div>
+        </center>
+ </div>
+
+    <div id="end" style="margin: 0 auto;">							<!--Результат-->
+        <center>    
+        <img id="cong" max-width="500"/>
+        <h1 id="q">
+            </h1>
+            <form id ="otveti" action="/test/answers.html">
+        <button type="submit" class="myButton" id="ans">Узнать ответы</button>
+        </form>
+            </center>
+    </div>
+
+   <div id="footer" > 
+	<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fanime.stohitrostey.ru%2Ftest%2Fanimetest.html&layout=button&size=large&mobile_iframe=true&width=114&height=28&appId" width="114" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</br>
+		        Test by <a href="https://www.facebook.com/chimmulman" target="_blank"> Zorochi</a> & <a href="https://www.facebook.com/cloud.strifer.528" target="_blank"> Cloud</a></a>
+
+	</div>
+</body>
+		<script src="Js1.js"></script>				<!--Подключение первого JavaScrips--> 
+</html>	
